@@ -14,8 +14,6 @@ allprojects {
 
 }
 
-
-
 subprojects {
     version = '1.0'
 
@@ -34,7 +32,3 @@ project(':api'){
         implementation project(':core')
     }
 }
-
-
-
-
