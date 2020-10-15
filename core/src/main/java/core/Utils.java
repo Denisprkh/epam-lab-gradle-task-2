@@ -7,7 +7,6 @@ import java.util.Arrays;
 public class Utils {
 
     public static boolean isAllPositiveNumbers(String... str){
-        boolean isAllPositiveNumbers = !Arrays.stream(str).anyMatch(o -> !StringUtils.isPositiveNumber(o));
-        return isAllPositiveNumbers;
+        return Arrays.stream(str).allMatch(StringUtils::isPositiveNumber);
     }
 }
