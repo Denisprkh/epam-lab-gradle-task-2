@@ -9,7 +9,6 @@ allprojects {
 
 subprojects {
     version = '1.0'
-
 }
 
 project(':core'){
